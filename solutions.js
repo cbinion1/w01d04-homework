@@ -30,6 +30,59 @@ const Palindrome = (str) => {
 console.log(Palindrome("blorg"));
 
 
+//Digit Sum:
+
+const sumDigits = (num) => {
+  
+  let numString = num.toString(); 
+  
+  let starting = 0;
+  
+  let sum = 0;
+  
+  if (num < 0) { 
+    sum -= Number(numString[1]); 
+    starting += 2;
+  }
+  
+  for (let i = 0; i < numString.length; i++) { 
+    sum += Number(numString[i]); 
+  }
+  
+  return sum;
+}
+
+console.log(sumDigits(145)); 
+
+
+
+//Pythagoras:
+
+
+const calculateSide = (sideA, sideB) => {
+  
+
+   return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+
+
+}
+
+console.log(calculateSide(4, 3));
+
+
+//
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
